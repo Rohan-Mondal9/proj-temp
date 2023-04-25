@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Flight Prediction</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+
+    <meta name="description" content="Flight booking website">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/flight-style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<link rel="stylesheet" href="css/nice-select.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/linearicons.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-sm-6 col-6 header-top-left">
+                        <ul>
+                            <li><a href="#">Visit Us</a></li>
+                            <li><a href="#">Buy Tickets</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-sm-6 col-6 header-top-right">
+                        <div class="header-social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container main-menu">
+            <div class="row align-items-center justify-content-between d-flex">
+                <nav id="nav-menu-container">
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                        <li><a href="hotels.html">Hotels</a></li>
+                        <li><a href="insurance.html">Insurence</a></li>
+                        <li class="menu-has-children"><a href="">Blog</a>
+                            <ul>
+                                <li><a href="blog-home.html">Blog Home</a></li>
+                                <li><a href="blog-single.html">Blog Single</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-has-children"><a href="">Pages</a>
+                            <ul>
+                                <li><a href="elements.html">Elements</a></li>
+                                <li class="menu-has-children"><a href="">Level 2 </a>
+                                    <ul>
+                                        <li><a href="#">Item One</a></li>
+                                        <li><a href="#">Item Two</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav><!-- #nav-menu-container -->
+            </div>
+        </div>
+    </header>
+    <section class="banner" id="top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="left-side">
+                        <div class="logo">
+                            <img src="img/logo.png" alt="Fly High Airlines">
+                        </div>
+                        <div class="tabs-content">
+                            <h4>FLY HIGH AIRLINES</h4>
+                            <p> Welcome to Fly High Airlines. We are here to offer
+                                you the best deals and prediction about your trip.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-md-offset-1">
+                    <section id="first-tab-group" class="tabgroup">
+                        <div id="tab1">
+                            <div class="submit-form">
+                                <h4>Check availability for <em>direction</em>:</h4>
+                                <form id="form-submit" action="" method="get">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <fieldset>
+                                                <label for="from">From:</label>
+                                                <select name="Location" id="from">
+                                                </select>
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <fieldset>
+                                                <label for="to">To:</label>
+                                                <select name="Location" id="to">
+                                                </select>
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <fieldset>
+                                                <label for="departure">Departure date:</label>
+                                                <input name="deparure" type="date" class="form-control date"
+                                                    id="deparure" placeholder="Select date..." required="">
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <fieldset>
+                                                <label for="return">Return date:</label>
+                                                <input name="return" type="date" class="form-control date" id="return"
+                                                    placeholder="Select date..." required="">
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="radio-select">
+                                                <div class="row">
+                                                    <div class="col-md-6 col-sm-6 col-xs-6">
+                                                        <label for="round">Round</label>
+                                                        <input type="radio" name="trip" id="round" value="round"
+                                                            required="required">
+                                                    </div>
+                                                    <div class="col-md-6 col-sm-6 col-xs-6">
+                                                        <label for="oneway">Oneway</label>
+                                                        <input type="radio" name="trip" id="oneway" value="one-way"
+                                                            required="required">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <fieldset>
+                                                <button type="submit" id="form-submit" class="btn">Order Ticket
+                                                    Now</button>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+    </section>
+    <!-- Start price Area -->
+    <section class="price-area section-gap">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="menu-content pb-70 col-lg-8">
+                    <div class="title text-center">
+                        <h1 class="mb-10">We Provide Affordable Prices</h1>
+                        <p>Well educated, intellectual people, especially scientists at all times demonstrate
+                            considerably.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="single-price">
+                        <h4>Cheap Packages</h4>
+                        <ul class="price-list">
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>Sri Lanka</span>
+                                <a href="#" class="price-btn">₹77000</a>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>Maldives</span>
+                                <a href="#" class="price-btn">₹150000</a>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>Bhutan</span>
+                                <a href="#" class="price-btn">₹34000</a>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>Bangladesh</span>
+                                <a href="#" class="price-btn">₹25000</a>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>Thailand</span>
+                                <a href="#" class="price-btn">₹150000</a>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>Singapore</span>
+                                <a href="#" class="price-btn">₹150000</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="single-price">
+                        <h4>Luxury Packages</h4>
+                        <ul class="price-list">
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>Sri Lanka</span>
+                                <a href="#" class="price-btn">₹150000</a>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>Maldives</span>
+                                <a href="#" class="price-btn">₹250000</a>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>Bhutan</span>
+                                <a href="#" class="price-btn">₹78000</a>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>Bangladesh</span>
+                                <a href="#" class="price-btn">₹50000</a>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>Thailand</span>
+                                <a href="#" class="price-btn">₹250000</a>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>Singapore</span>
+                                <a href="#" class="price-btn">₹200000</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="single-price">
+                        <h4>Couple Packages</h4>
+                        <ul class="price-list">
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>Sri Lanka</span>
+                                <a href="#" class="price-btn">₹150000</a>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>Maldives</span>
+                                <a href="#" class="price-btn">₹200000</a>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>Bhutan</span>
+                                <a href="#" class="price-btn">₹50000</a>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>Bangladesh</span>
+                                <a href="#" class="price-btn">₹45000</a>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>Thailand</span>
+                                <a href="#" class="price-btn">₹250000</a>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>Singapore</span>
+                                <a href="#" class="price-btn">₹200000</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End price Area -->
+    <section class="home-about-area">
+        <div class="container-fluid">
+            <div class="row align-items-center justify-content-end">
+                <div class="col-lg-6 col-md-12 home-about-left">
+                    <h1>
+                        Did not find your Package? <br>
+                        Feel free to ask us. <br>
+                        We‘ll make it for you
+                    </h1>
+                    <p>
+                        inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct
+                        standards especially in the workplace. That’s why it’s crucial that, as women, our behavior on
+                        the job is beyond reproach. inappropriate behavior is often laughed.
+                    </p>
+                    <a href="#" class="primary-btn text-uppercase">request custom price</a>
+                </div>
+                <div class="col-lg-6 col-md-12 home-about-right no-padding">
+                    <img class="img-fluid" src="img/about-img.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End home-about Area -->
+
+    <section class="other-issue-area section-gap">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="menu-content pb-70 col-lg-9">
+                    <div class="title text-center">
+                        <h1 class="mb-10">Our Team--</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-other-issue">
+                        <div class="thumb">
+                            <img class="img-fluid" src="img/b1.jpg" alt="" height=350 width=250>
+                        </div>
+                        <a href="#">
+                            <h4>Role : ML</h4>
+                        </a>
+                        <p>
+                            Sreejoni Majumdar      
+                                          </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-other-issue">
+                        <div class="thumb">
+                            <img class="img-fluid" src="img/b2.jpg" alt=""height=350 width=250>
+                        </div>
+                        <a href="#">
+                            <h4>Role : FrontEnd</h4>
+                        </a>
+                        <p>
+                            Sreetama Biswas    
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-other-issue">
+                        <div class="thumb">
+                            <img class="img-fluid" src="img/b3.jpg" alt=""height=350 width=250>
+                        </div>
+                        <a href="#">
+                            <h4>Role : Backend</h4>
+                        </a>
+                        <p>
+                            Rohan Mondal
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-other-issue">
+                        <div class="thumb">
+                            <img class="img-fluid" src="img/b4.jpg" alt=""height=350 width=250>
+                        </div>
+                        <a href="#">
+                            <h4>Role : Cloud Hosting</h4>
+                        </a>
+                        <p>
+                            Anurag Das                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Start blog Area -->
+    
+
+    
+
+
+
+    <!-- start footer Area -->
+    <footer class="footer-area section-gap">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-3  col-md-6 col-sm-6">
+                    <div class="single-footer-widget">
+                        <h6>About Agency</h6>
+                        <p>
+                            The world has become so fast paced that people don’t want to stand by reading a page of
+                            information, they would much rather look at a presentation and understand the message. It
+                            has come to a point
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-footer-widget">
+                        <h6>Navigation Links</h6>
+                        <div class="row">
+                            <div class="col">
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Feature</a></li>
+                                    <li><a href="#">Services</a></li>
+                                    <li><a href="#">Portfolio</a></li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <ul>
+                                    <li><a href="#">Team</a></li>
+                                    <li><a href="#">Pricing</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3  col-md-6 col-sm-6">
+                    <div class="single-footer-widget">
+                        <h6>Newsletter</h6>
+                        <p>
+                            For business professionals caught between high OEM price and mediocre print and graphic
+                            output.
+                        </p>
+                        <div id="mc_embed_signup">
+                            <form target="_blank"
+                                action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                                method="get" class="subscription relative">
+                                <div class="input-group d-flex flex-row">
+                                    <input name="EMAIL" placeholder="Email Address" onfocus="this.placeholder = ''"
+                                        onblur="this.placeholder = 'Email Address '" required="" type="email">
+                                    <button class="btn bb-btn"><span class="lnr lnr-location"></span></button>
+                                </div>
+                                <div class="mt-10 info"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+    
+            <div class="row footer-bottom d-flex justify-content-between align-items-center">
+                <div class="col-lg-4 col-sm-12 footer-social">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer Area -->
+
+</body>
+
+</html>
